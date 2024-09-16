@@ -11,7 +11,7 @@ public class RewardValue {
             this.miles = (cash / 0.0035);
     }
 
-    //Miles Constructor
+    //Miles Constructor. Using BigDecimal for miles as cannot use the constructor with same datatype twice
     public RewardValue(BigDecimal miles){
         this.miles = miles.doubleValue();
         this.cash = (miles.doubleValue()*0.0035);
